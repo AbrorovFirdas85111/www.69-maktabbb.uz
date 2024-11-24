@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="69 Maktab Boshqaruv Paneli - O'qituvchilar, Talabalar va Maktabni boshqarish uchun zarur barcha vositalar">
+  <meta name="author" content="69 Maktab">
+  <title>69 Maktab Boshqaruv Paneli</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS files -->
+  <link href="assets/css/dashboard.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico">
+</head>
+
+<body class="bg-light">
+  <!-- Sidebar -->
+  <div class="d-flex">
+    <div class="bg-dark text-white p-4" style="width: 250px;">
+      <h3 class="text-center">Boshqaruv Paneli</h3>
+      <ul class="list-unstyled mt-4">
+        <li><a href="#dashboard" class="text-white d-block p-2">Asosiy Sahifa</a></li>
+        <li><a href="#teachers" class="text-white d-block p-2">O'qituvchilar</a></li>
+        <li><a href="#students" class="text-white d-block p-2">Talabalar</a></li>
+        <li><a href="#attendance" class="text-white d-block p-2">Davomiyat</a></li>
+        <li><a href="#settings" class="text-white d-block p-2">Sozlamalar</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">69 Maktab</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chiqish</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Dashboard Overview -->
+      <section id="dashboard" class="mt-4">
+        <div class="container">
+          <h2 class="text-3xl font-semibold mb-4">Boshqaruv Paneli</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card shadow-lg">
+                <div class="card-body">
+                  <h5 class="card-title">O'qituvchilar</h5>
+                  <p class="card-text">Hozirda faol o'qituvchilar soni: 40</p>
+                  <a href="#teachers" class="btn btn-primary">Batafsil</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card shadow-lg">
+                <div class="card-body">
+                  <h5 class="card-title">Talabalar</h5>
+                  <p class="card-text">O'quvchilar soni: 850 (Bilimsiz: 250, O'rta: 400, Yaxshi: 200)</p>
+                  <a href="#students" class="btn btn-primary">Batafsil</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card shadow-lg">
+                <div class="card-body">
+                  <h5 class="card-title">Davomiyat</h5>
+                  <p class="card-text">O'quvchilarning davomiyati: 95% muvaffaqiyat</p>
+                  <a href="#attendance" class="btn btn-primary">Batafsil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+        <!-- O'qituvchilar bo'limi -->
+        <section id="teachers" class="mt-5">
+            <div class="container">
+              <h2 class="text-3xl font-semibold mb-4">O'qituvchilar</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <h5 class="card-title">Faol O'qituvchilar</h5>
+                      <p class="card-text">40 o'qituvchi faoliyat yuritmoqda.</p>
+                      <a href="#" class="btn btn-primary">Ko'rish</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <h5 class="card-title">O'qituvchilarni Qo'shish</h5>
+                      <p class="card-text">Yangi o'qituvchini qo'shish uchun bu tugmani bosing.</p>
+                      <a href="#" class="btn btn-primary">Qo'shish</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <!-- Talabalar bo'limi -->
+          <section id="students" class="mt-5">
+            <div class="container">
+              <h2 class="text-3xl font-semibold mb-4">Talabalar</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <h5 class="card-title">Bilimsiz Talabalar</h5>
+                      <p class="card-text">250 talabadan iborat.</p>
+                      <a href="#" class="btn btn-primary">Batafsil</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <h5 class="card-title">O'rta Bilimli Talabalar</h5>
+                      <p class="card-text">400 talabadan iborat.</p>
+                      <a href="#" class="btn btn-primary">Batafsil</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <h5 class="card-title">Yuqori Bilimli Talabalar</h5>
+                      <p class="card-text">200 talabadan iborat.</p>
+                      <a href="#" class="btn btn-primary">Batafsil</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <!-- Davomiyat bo'limi -->
+          <section id="attendance" class="mt-5">
+            <div class="container">
+              <h2 class="text-3xl font-semibold mb-4">Davomiyat</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <h5 class="card-title">Joriy Oy Davomiyati</h5>
+                      <p class="card-text">Davomiyat 95% tashkil etmoqda.</p>
+                      <a href="#" class="btn btn-primary">Ko'rish</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <h5 class="card-title">Davomiyatni Yangilash</h5>
+                      <p class="card-text">Talabalar davomiyatini yangilash uchun ushbu tugmani bosing.</p>
+                      <a href="#" class="btn btn-primary">Yangilash</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <!-- Sozlamalar bo'limi -->
+          <section id="settings" class="mt-5">
+            <div class="container">
+              <h2 class="text-3xl font-semibold mb-4">Sozlamalar</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <h5 class="card-title">Maktab Sozlamalari</h5>
+                      <p class="card-text">Maktabning asosiy sozlamalarini ko'rish va tahrirlash.</p>
+                      <a href="#" class="btn btn-primary">Tahrirlash</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <h5 class="card-title">Profilni Yangilash</h5>
+                      <p class="card-text">O'zingizning profil ma'lumotlaringizni yangilang.</p>
+                      <a href="#" class="btn btn-primary">Yangilash</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+        </div>
+      </div>
+    
+      <!-- JS fayllari -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/seo/seo.js"></script>
+      <script src="assets/js/dashboard.js"></script>
+    </body>
+    
+    </html>
+    
